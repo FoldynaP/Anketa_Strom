@@ -1,0 +1,61 @@
+@media only screen and (max-width: 766px) {
+    .card{
+        margin-top: 60px;
+    }
+    .main-text{
+        margin: 0 20px;
+    }
+    .box1{
+        border-right: none;
+    }
+    .box2{
+        border-right: none;
+    }
+    .carousel-caption h3{
+        margin-left: 40px;
+    }
+    .counter-up{
+        height: 800px;
+    }
+  }
+@media only screen and (max-width: 992px){
+    .logo{
+        display: none;
+    }
+    .topnav.sticky{
+        background-color: rgba(132, 221, 64, 1);
+    }
+    .hamburger{
+        display: inline-block;
+        position: fixed;
+        padding: 3px 6px;
+        border-radius: 10px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(132, 221, 64, 1);
+        width: 100%;
+        text-align: center;
+        transition: 0.4s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+        z-index: 100;
+    }
+}
